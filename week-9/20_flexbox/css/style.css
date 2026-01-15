@@ -1,0 +1,49 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	background: yellow;
+	height: 100vh;
+	display: flex;
+	
+	justify-content: flex-start;
+	/*align-items: flex-start;*/	
+	flex-wrap: wrap;
+	
+}
+
+.centered{
+	height: 100vh;
+	background: gray;
+
+	display: flex;
+	justify-content: center;	
+	align-items: center;
+}
+
+.box{
+	background: coral;
+	border: 1px solid red;
+	box-sizing: border-box;
+	padding: 1em;
+	/*height: 150px;*/
+	/*flex: 1;*/
+	min-width: 50%;
+}
+
+/*.box:first-child{
+	flex: 3;
+}
+*/
+
+/*.first{
+	width: 500px;
+}*/
+
+p{
+	font-style: italic;
+}
+
+
+
