@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+.stroke {
+  background-color: black;
+}
+
+div {
+  position: absolute;
+}
+
+#p {
+  width: 25vw;
+  /* border: 1px solid magenta; */
+  aspect-ratio: 2 / 1;
+  position: relative;
+}
+
+#p1 {
+  width: 20%;
+  height: 100%;
+  transform: skewX(-45deg);
+  transform-origin: bottom left;
+  border: 3px solid white;
+  z-index: 10;
+}
+
+#p2 {
+  height: 25%;
+  width: 31%;
+  right: 0%;
+  transform-origin: top left;
+  border: 2px solid white;
+  transform: rotate(45deg);
+}
+
+#p3 {
+  height: 25%;
+  width: 44%;
+  right: 0;
+  top: 36%;
+  right: 18%;
+  z-index: -10;
+}
