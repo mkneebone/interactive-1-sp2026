@@ -1,0 +1,30 @@
+.letter {
+  width: 25vw;
+  height: 40vw;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
+
+#l-counter {
+  width: 60%;
+  height: 80%;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  top: -105%;
+  transition: top 2s;
+}
+
+.circle {
+  width: 100%;
+  height: 50%;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -25%;
+}
+
+.letter:hover #l-counter {
+  top: 0;
+}
