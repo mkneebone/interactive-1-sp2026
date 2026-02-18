@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Typeface Demo</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <!--------------------------------
+        div.cell*40
+
+        Result:
+            40 divs with class of cell
+            <div class="cell"></div>
+            x 40
+
+        ------------------------------
+        div.cell#a$*40
+
+        Result:
+            40 divs with class of cell, id of a$
+            <div class="cell" id="a1"></div>
+            x40
+
+        ------------------------------
+        div.cell#a$*40{$}
+    
+        Result:
+            40 divs with class of cell, id a$, content of $
+            <div class="cell" id="a1">1</div>
+
+     -->
+    <!-- A -->
+    <main>
+      <div class="cell" id="a1">
+        <div class="inner"></div>
+      </div>
+      <div class="cell reverse" id="a2">
+        <div class="inner fill"></div>
+      </div>
+      <div class="cell" id="a3">
+        <div class="inner"></div>
+      </div>
+    </main>
+  </body>
+</html>
