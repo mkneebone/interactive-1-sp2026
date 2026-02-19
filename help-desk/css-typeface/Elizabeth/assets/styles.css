@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+section {
+  width: 405px;
+  border: 1px solid blue;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 50%;
+  aspect-ratio: 1 / 1;
+  border: 2px solid black;
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+  /* margin-bottom: -2px; */
+}
+
+.ink {
+  position: absolute;
+  inset: 0;
+  filter: invert(1);
+}
+
+.circle {
+  width: 200%;
+  height: 200%;
+  border-radius: 50%;
+  position: absolute;
+  mix-blend-mode: difference;
+  background: white;
+}
+
+#c1 {
+  top: 0;
+  left: 0;
+}
+
+#c2 {
+  top: -100%;
+  left: -100%;
+}
+
+.r90 {
+  transform: rotate(90deg);
+}
+.r270 {
+  transform: rotate(270deg);
+}
+
+.invert {
+  background-color: black;
+}
+
+.no-border {
+  border: 0;
+}
