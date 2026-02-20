@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --ink: #c01616;
+  --paper: #fff;
+  --hover: #ff8fc6;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--paper);
+  display: grid;
+  place-items: center;
+  padding: clamp(1rem, 4vw, 2.5rem);
+}
+
+.alphabet-grid {
+  width: min(95vw, 90rem);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+.letter {
+  --tri-space: 24%;
+  --pair-left: 0%;
+  --pair-top: 0%;
+  --pair-width: var(--tri-space);
+  --pair-height: 40%;
+  --pair-retreat-x: 78%;
+  --pair-retreat-scale: 0.72;
+  --tri-size: 50%;
+  --tri-gap: 0%;
+  --tri-1-x: 0%;
+  --tri-1-y: 0%;
+  --tri-1-rotate: 0deg;
+  --tri-2-x: 0%;
+  --tri-2-y: 0%;
+  --tri-2-rotate: 0deg;
+  position: relative;
+  aspect-ratio: 3 / 4;
+  background: var(--paper);
+  overflow: hidden;
+  /* border: 0.125rem solid #222; */
+}
+
+.glyph {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: var(--tri-space);
+}
+
+.glyph > div {
+  position: absolute;
+  background: var(--ink);
+  transition: border-radius 1s ease 0s;
+}
+
+.tri-pair {
+  position: absolute;
+  left: var(--pair-left);
+  top: var(--pair-top);
+  width: var(--pair-width);
+  height: var(--pair-height);
+  z-index: 2;
+  transform: translateX(0) scaleX(1);
+  transform-origin: right center;
+  transition: transform 0.5s ease 1s;
+}
+
+.tri {
+  position: absolute;
+  width: 100%;
+  height: var(--tri-size);
+  background: var(--ink);
+  clip-path: polygon(0 50%, 100% 0, 100% 100%);
+}
+
+.tri-1 {
+  left: var(--tri-1-x);
+  top: var(--tri-1-y);
+  transform: rotate(var(--tri-1-rotate));
+}
+
+.tri-2 {
+  left: var(--tri-2-x);
+  top: calc(var(--tri-size) + var(--tri-gap) + var(--tri-2-y));
+  transform: rotate(var(--tri-2-rotate));
+}
+
+.cut {
+  background: var(--paper) !important;
+}
+
+.letter:hover .glyph > div {
+  background: var(--hover);
+  border-radius: 999px;
+  transition-delay: 140ms;
+}
+
+.letter:hover .cut {
+  background: var(--paper) !important;
+}
+
+.letter:hover .tri {
+  background: var(--hover);
+}
+
+.letter:hover .tri-pair {
+  transform: translateX(var(--pair-retreat-x)) scaleX(var(--pair-retreat-scale));
+  transition-delay: 0ms;
+}
+
+/* C */
+.letter-c .spine {
+  width: 50%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.letter-c .top-bar {
+  width: 100%;
+  height: 30%;
+  left: 0;
+  top: 0;
+}
+
+.letter-c .bottom-bar {
+  width: 100%;
+  height: 30%;
+  left: 0;
+  bottom: 0;
+}
+
+/* E */
+.letter-e .spine {
+  width: 50%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.letter-e .top-bar {
+  width: 100%;
+  height: 30%;
+  left: 0;
+  top: 0;
+}
+
+.letter-e .mid-bar {
+  width: 70%;
+  height: 12%;
+  left: 0;
+  top: 44%;
+}
+
+.letter-e .bottom-bar {
+  width: 100%;
+  height: 30%;
+  left: 0;
+  bottom: 0;
+}
+
+/* F */
+.letter-f .spine {
+  width: 50%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.letter-f .top-bar {
+  width: 100%;
+  height: 30%;
+  left: 0;
+  top: 0;
+}
+
+.letter-f .mid-bar {
+  width: 70%;
+  height: 12%;
+  left: 0;
+  top: 44%;
+}
+
+/* G */
+.letter-g .spine {
+  width: 50%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.letter-g .top-bar {
+  width: 100%;
+  height: 30%;
+  left: 0;
+  top: 0;
+}
+
+.letter-g .bottom-bar {
+  width: 100%;
+  height: 30%;
+  left: 0;
+  bottom: 0;
+}
+
+.letter-g .mid-bar {
+  width: 38%;
+  height: 12%;
+  right: 0;
+  top: 52%;
+}
+
+.letter-g .right-stem {
+  width: 20%;
+  height: 38%;
+  right: 0;
+  top: 52%;
+}
+
+/* H */
+.letter-h .left-spine {
+  width: 50%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.letter-h .right-spine {
+  width: 18%;
+  height: 100%;
+  left: 82%;
+  top: 0;
+}
+
+.letter-h .mid-bar {
+  width: 75%;
+  height: 12%;
+  left: 18%;
+  top: 44%;
+}
