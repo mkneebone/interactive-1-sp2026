@@ -1,0 +1,45 @@
+:root {
+  --green: #00ff66;
+}
+
+body {
+  background: black;
+  color: var(--green);
+  font-family: monospace;
+  font-size: 15px;
+}
+
+.choice {
+  cursor: pointer;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.choice:hover,
+.choice:focus {
+  background: var(--green);
+  color: black;
+}
+
+#story-frame {
+  width: 50vw;
+  min-width: 500px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#image-frame {
+  width: 100vw;
+  height: 70vh;
+  display: grid;
+  place-items: center;
+}
+
+#ascii {
+  font-size: 10px;
+}
+
+#story {
+  line-height: 20px;
+}
