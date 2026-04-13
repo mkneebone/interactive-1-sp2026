@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trip to the Vet</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="viewport">
+      <div class="world">
+        <div class="background"></div>
+        <div class="zones" aria-hidden="true"></div>
+        <div class="zone-alert" hidden aria-hidden="true">❗</div>
+        <div class="character"></div>
+      </div>
+      <div class="interaction-prompt" hidden>Press spacebar to enter.</div>
+    </div>
+
+    <section class="screen screen-dialog" hidden aria-live="polite">
+      <div class="screen-card">
+        <h1 id="dialog-title">Front Desk</h1>
+        <p id="dialog-body">Welcome to your neighborhood vet.</p>
+        <button class="screen-button" type="button">Return to map</button>
+      </div>
+    </section>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>
