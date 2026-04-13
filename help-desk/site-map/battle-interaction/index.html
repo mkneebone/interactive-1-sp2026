@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Water vs Fire</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <h1>Water vs Fire</h1>
+
+      <div class="battle-row">
+        <div class="fighter-box">
+          <h2>Player</h2>
+          <p class="character">💧</p>
+          <p><span id="player-health-text">100</span> / 100</p>
+          <div class="health-bar">
+            <div class="health-fill player-fill" id="player-health-bar"></div>
+          </div>
+        </div>
+
+        <div class="fighter-box">
+          <h2>CPU</h2>
+          <p class="character">🔥</p>
+          <p><span id="cpu-health-text">100</span> / 100</p>
+          <div class="health-bar">
+            <div class="health-fill cpu-fill" id="cpu-health-bar"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="controls-box">
+        <h2>Attacks</h2>
+        <p>
+          <button type="button" onclick="playerAttack('Small Attack', 12)">
+            Small Attack
+          </button>
+          <button type="button" onclick="playerAttack('Medium Attack', 18)">
+            Medium Attack
+          </button>
+          <button type="button" onclick="playerAttack('Strong Attack', 24)">
+            Strong Attack
+          </button>
+          <button type="button" onclick="resetBattle()">Restart Battle</button>
+        </p>
+      </div>
+
+      <div class="message-box">
+        <h2>Message</h2>
+        <p id="battle-message">The battle begins. Pick an attack.</p>
+      </div>
+    </div>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>
