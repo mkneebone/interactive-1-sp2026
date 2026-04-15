@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trip to the Vet</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body tabindex="0">
+    <!-- instructions- first screen -->
+    <div id="startScreen">
+      <img src="assets/images/instructions.png" class="instructions" />
+    </div>
+
+    <div class="viewport">
+      <div class="world">
+        <div class="background"></div>
+        <div class="character"></div>
+        <img src="assets/images/poodle.png" class="poodle" />
+        <div class="hitbox"></div>
+        <div class="trigger-zone"></div>
+
+        <!-- Poodle Instructions -->
+        <div id="poodleScene">
+          <div id="poodleSceneInner">
+            <img src="assets/images/BigPoodle.png" class="bigPoodle" />
+            <div id="poodleDialogueText"></div>
+          </div>
+        </div>
+
+        <!-- POODLE DIALOGUE POP UP BOX -->
+        <img src="assets/images/textbox1.png" class="textbox" />
+
+        <!-- RM Exclamation -->
+        <img src="assets/images/exclamation.png" class="exclamation" />
+        <img src="assets/images/exclamation.png" class="rm2exclamation" />
+        <img src="assets/images/exclamation.png" class="rm3exclamation" />
+        <img src="assets/images/exclamation.png" class="rm4exclamation" />
+        <img src="assets/images/exclamation1.png" class="rm5exclamation" />
+        <img src="assets/images/exclamation1.png" class="rm6exclamation" />
+        <img src="assets/images/exclamation1.png" class="rm7exclamation" />
+        <img src="assets/images/exclamation1.png" class="rm8exclamation" />
+        <img src="assets/images/exclamation1.png" class="drugsexclamation" />
+        <div class="rm1"></div>
+        <div class="rm2"></div>
+        <div class="rm3"></div>
+        <div class="rm4"></div>
+        <div class="rm5"></div>
+        <div class="rm6"></div>
+        <div class="rm7"></div>
+        <div class="rm8"></div>
+        <div class="drugs"></div>
+      </div>
+    </div>
+
+    <!-- EXAM ROOM OVERLAY -->
+    <div id="examScene">
+      <video id="doorOpenVideo" autoplay muted playsinline>
+        <source src="assets/images/DoorOpen.mp4" type="video/mp4" />
+      </video>
+
+      <div id="examContainer">
+        <img src="" id="examCharacter" />
+
+        <div id="examDialogueBox">
+          <p id="examDialogueText"></p>
+
+          <div id="examChoices">
+            <div class="exam-choice selected" id="examChoiceA"></div>
+            <div class="exam-choice" id="examChoiceB"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/rooms.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

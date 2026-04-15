@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 792 792">
+  <!-- Generator: Adobe Illustrator 30.3.0, SVG Export Plug-In . SVG Version: 2.1.3 Build 182)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+
+      .st1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <polyline class="st0" points="270.3 0 270.3 196.73 0 504.73"/>
+  <polygon class="st0" points="252.97 379.36 396 216.38 504.64 216.38 504.64 451.19 252.97 451.19 252.97 379.36"/>
+  <polyline class="st0" points="270.3 196.73 203.73 138.32 13.52 355.06 80.09 413.48"/>
+  <rect class="st0" x="252.97" y="523.94" width="251.67" height="89.6"/>
+  <rect class="st0" x="2.64" y="590.57" width="104.56" height="38.29"/>
+  <rect class="st0" x="2.64" y="750.61" width="104.56" height="38.29"/>
+  <rect class="st0" x="357.61" y="2.62" width="107.97" height="124.06"/>
+  <rect class="st0" x="344.59" y="755.21" width="444.92" height="33.69"/>
+  <rect class="st1" x="384.79" y="126.68" width="53.6" height="14.55"/>
+  <rect class="st1" x="286.82" width="53.6" height="14.55"/>
+  <rect class="st1" x="757.92" y="163.38" width="53.6" height="14.55" transform="translate(955.38 -614.07) rotate(90)"/>
+  <rect class="st1" x="432.41" y="451.19" width="53.6" height="14.55"/>
+  <rect class="st1" x="199.37" y="774.35" width="53.6" height="14.55"/>
+  <rect class="st0" x="465.58" y="2.62" width="107.97" height="124.06"/>
+  <rect class="st1" x="492.77" y="126.68" width="53.6" height="14.55"/>
+  <rect class="st0" x="573.56" y="2.62" width="107.97" height="124.06"/>
+  <rect class="st1" x="600.74" y="126.68" width="53.6" height="14.55"/>
+  <rect class="st0" x="681.53" y="2.62" width="107.97" height="124.06"/>
+  <rect class="st1" x="708.72" y="126.68" width="53.6" height="14.55"/>
+  <rect class="st0" x="344.59" y="715" width="40.2" height="40.2"/>
+  <rect class="st0" x="445.81" y="715" width="40.2" height="40.2"/>
+  <rect class="st0" x="547.03" y="715" width="40.2" height="40.2"/>
+  <rect class="st0" x="749.31" y="715" width="40.2" height="40.2"/>
+  <rect class="st0" x="673" y="206.59" width="107.97" height="124.06" transform="translate(995.6 -458.37) rotate(90)"/>
+  <rect class="st1" x="630.88" y="261.34" width="53.6" height="14.55" transform="translate(926.3 -389.07) rotate(90)"/>
+  <rect class="st0" x="673" y="314.56" width="107.97" height="124.06" transform="translate(1103.58 -350.4) rotate(90)"/>
+  <rect class="st1" x="630.88" y="369.31" width="53.6" height="14.55" transform="translate(1034.27 -281.1) rotate(90)"/>
+  <rect class="st0" x="673" y="422.54" width="107.97" height="124.06" transform="translate(1211.55 -242.42) rotate(90)"/>
+  <rect class="st1" x="630.88" y="477.29" width="53.6" height="14.55" transform="translate(1142.25 -173.12) rotate(90)"/>
+  <rect class="st0" x="673" y="530.51" width="107.97" height="124.06" transform="translate(1319.53 -134.45) rotate(90)"/>
+  <rect class="st1" x="630.88" y="585.26" width="53.6" height="14.55" transform="translate(1250.22 -65.15) rotate(90)"/>
+  <rect class="st1" x="757.92" y="673.49" width="53.6" height="14.55" transform="translate(1465.49 -103.96) rotate(90)"/>
+  <path class="st1" d="M787,5v782H5V5h782M792,0H0v792h792V0h0Z"/>
+</svg>

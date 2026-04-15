@@ -1,0 +1,257 @@
+@font-face {
+  font-family: "Minecraft";
+  src: url("../fonts/Minecraft.ttf") format("truetype");
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* ===== FULLSCREEN OVERLAYS ===== */
+#startScreen,
+#poodleScene,
+#examScene {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#startScreen {
+  display: flex;
+}
+
+.instructions {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+#poodleScene {
+  display: none;
+}
+
+#examScene {
+  display: none;
+  font-family: "Minecraft";
+  overflow: hidden;
+}
+
+/* ===== OVERWORLD ===== */
+.viewport {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.world {
+  position: absolute;
+}
+
+.background {
+  width: 3300px;
+  height: 3300px;
+  background: url(../images/bigmap.svg) no-repeat 0 0 / 3300px 3300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.character {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  position: absolute;
+}
+
+/* ===== POODLE & HITBOX ===== */
+.poodle {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 2225px;
+  left: 650px;
+  z-index: 2;
+}
+
+.hitbox {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  left: 775px;
+  top: 2100px;
+  background: rgba(255, 0, 0, 0.3); /* DEBUG */
+  border: 2px solid red;
+}
+
+.textbox {
+  position: absolute;
+  width: 400px;
+  z-index: 999;
+  display: none;
+}
+
+.trigger-zone {
+  position: absolute;
+  left: 450px;
+  top: 2350px;
+  width: 1050px;
+  height: 900px;
+  border: 3px solid rgb(219, 235, 8); /* DEBUG */
+  opacity: 70%;
+}
+
+/* ===== POODLE SCENE ===== */
+#poodleSceneInner {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+.bigPoodle {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#poodleDialogueText {
+  position: absolute;
+  top: 68.3%;
+  left: 9.1%;
+  width: 79.4%;
+  height: 25.4%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2% 3%;
+  box-sizing: border-box;
+  text-align: center;
+  color: black;
+  font-family: Minecraft;
+  font-size: clamp(12px, 2.5vmin, 24px);
+  line-height: 1.4;
+  pointer-events: none;
+}
+
+/* ===== EXCLAMATION ICONS ===== */
+.exclamation,
+.rm2exclamation,
+.rm3exclamation,
+.rm4exclamation,
+.rm5exclamation,
+.rm6exclamation,
+.rm7exclamation,
+.rm8exclamation,
+.drugsexclamation {
+  position: absolute;
+  width: 100px;
+  z-index: 50;
+}
+
+.exclamation     { top: 2400px; left: 2600px; } /* RM1 */
+.rm2exclamation  { top: 1950px; left: 2600px; }
+.rm3exclamation  { top: 1500px; left: 2600px; }
+.rm4exclamation  { top: 1050px; left: 2600px; }
+.rm5exclamation  { top: 600px;  left: 1675px; }
+.rm6exclamation  { top: 600px;  left: 2125px; }
+.rm7exclamation  { top: 600px;  left: 2575px; }
+.rm8exclamation  { top: 600px;  left: 3010px; }
+.drugsexclamation { top: 1950px; left: 1860px; }
+
+/* ===== ROOM ZONES ===== */
+.rm1, .rm2, .rm3, .rm4,
+.rm5, .rm6, .rm7, .rm8,
+.drugs {
+  position: absolute;
+  border: 1px solid rgb(255, 0, 0); /* DEBUG */
+}
+
+.rm1, .rm2, .rm3, .rm4 {
+  rotate: 90deg;
+}
+
+.drugs { width: 425px; height: 400px; top: 1800px; left: 1680px; border-color: rgb(51, 255, 0); }
+.rm1   { width: 475px; height: 850px; top: 2050px; left: 2300px; border-color: rgb(47, 0, 255); }
+.rm2   { width: 450px; height: 875px; top: 1575px; left: 2325px; }
+.rm3   { width: 450px; height: 875px; top: 1125px; left: 2325px; }
+.rm4   { width: 425px; height: 875px; top: 675px;  left: 2325px; }
+.rm5   { width: 425px; height: 875px; top: 20px;   left: 1500px; }
+.rm6   { width: 425px; height: 875px; top: 20px;   left: 1950px; }
+.rm7   { width: 425px; height: 875px; top: 20px;   left: 2400px; }
+.rm8   { width: 375px; height: 875px; top: 20px;   left: 2850px; }
+
+/* ===== EXAM ROOM OVERLAY ===== */
+#doorOpenVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90vw;
+  max-height: 70vh;
+  z-index: 1;
+}
+
+#examContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+#examCharacter {
+  width: min(900px, 80vw);
+  height: 50vh;
+  object-fit: contain;
+  object-position: bottom center;
+  flex-shrink: 0;
+}
+
+#examDialogueBox {
+  width: min(600px, 85vw);
+  min-height: 200px;
+  padding: clamp(12px, 3vw, 24px);
+  border: 2px solid white;
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+  font-size: clamp(16px, 2.5vw, 20px);
+  line-height: 1.5;
+  flex-shrink: 0;
+}
+
+#examChoices {
+  margin-top: clamp(10px, 2vw, 20px);
+}
+
+.exam-choice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: clamp(36px, 5vw, 48px);
+  padding: clamp(8px, 1.5vw, 12px);
+  margin: 5px 0;
+  border: 2px solid gray;
+  color: white !important;
+  font-size: clamp(14px, 2.2vw, 18px);
+}
+
+.exam-choice.selected {
+  border-color: yellow;
+  background: rgba(255, 255, 0, 0.1);
+}
